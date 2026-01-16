@@ -1,21 +1,39 @@
 import React from 'react'
-import {useDispatch,useSelector } from 'react-redux'
 import {featchPhotos,featchVideos,featchGif} from "../api/mediaApi"
-import {setQuery,setLoading,setError,setResults } from '../redux/features/searchSlicel'
+import {setQuery,setLoading,setError,setResults } from "../redux/features/searchSlicel"
+import {useDispatch,useSelector} from "react-redux"
+import { useEffect } from 'react'
+
 
 const ResultGrid = () => {
+  const {query,activeTab,results,loading,error} =   useSelector((store)=>store.search)
 
-const {query,activeTab,results,loading,error} = useSelector((store)=>store.search)
-const getData =async ()=>{
+
+
+  useEffect(()=>{
+      const getData =async ()=>{
+    let data
     if(activeTab == "photos"){
-        const data = await featchPhotos(query)
-       console.log(data)
+        data = await featchPhotos(query)
+        
     }
-}
+       if(activeTab == "videos"){
+        data = await featchVideos(query)
+        
+    }
+       if(activeTab == "gif"){
+        data = await featchGif(query)
+        
+    }
+    console.log(data)
+  }
+getData()
+  },[query,activeTab])
+
 
   return (
-    <div>
-      <button onClick={getData}>getData</button>
+    <div className=''>
+      
     </div>
   )
 }
