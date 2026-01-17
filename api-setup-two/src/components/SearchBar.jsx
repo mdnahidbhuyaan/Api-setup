@@ -20,7 +20,7 @@ const SearchBar = () => {
         onSubmit={(e) => {
           submitHandler(e);
         }}
-        className="flex gap-5 px-10 py-6 shadow-lg"
+        className="flex gap-5 px-10 py-6 shadow-lg bg-white"
       >
         <input
         
@@ -33,7 +33,7 @@ const SearchBar = () => {
           type="text"
           placeholder="Search Anything..."
         />
-        <button className="bg-cyan-700 rounded-sm text-white px-5 py-1 text-xl cursor-pointer active:scale-95">
+        <button className="bg-green-700 rounded-sm text-white px-5 py-1 text-xl cursor-pointer active:scale-95">
           Search
         </button>
       </form>
