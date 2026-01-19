@@ -20,7 +20,7 @@ const SearchBar = () => {
         onSubmit={(e) => {
           submitHandler(e);
         }}
-        className="flex gap-5 px-10 py-6 shadow-lg bg-white sticky top-0 z-10"
+        className="flex gap-5 px-8 py-6 shadow-lg bg-white sticky top-0 z-10"
       >
         <input
         

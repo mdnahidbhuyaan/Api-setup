@@ -4,3 +4,13 @@
 #bottom{
     background: linear-gradient(transparent,black);
 }
+*{
+    font-family: "helvetica neue";
+}
+
+:root{
+    --c1:rgb(196, 149, 232);
+    --c2:rgb(12, 43, 78);
+    --c3:rgb(111, 80, 248);
+    --c4:rgb(12, 43, 78);
+}
