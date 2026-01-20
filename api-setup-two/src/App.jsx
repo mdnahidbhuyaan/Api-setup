@@ -11,6 +11,7 @@ const App = () => {
   return (
     <div className=' min-h-screen w-full bg-white shadow-lg'>
        <Navbar/>
+       <h1></h1>
        <Routes>
         <Route  path='/' element={<HomePage/>}/>
         <Route  path='/pagecollection' element={<PageCollection/>}/>
