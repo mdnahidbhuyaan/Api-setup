@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage'
 import PageCollection from './pages/PageCollection'
 import About from './pages/About'
 import Navbar from './components/Navbar'
+  import { ToastContainer } from 'react-toastify';
 
 const App = () => {
 
@@ -17,6 +18,8 @@ const App = () => {
         <Route  path='/pagecollection' element={<PageCollection/>}/>
         <Route  path='/about' element={<About/>}/>
        </Routes>
+               <ToastContainer />
+
 
 
 
