@@ -22,7 +22,7 @@ const collectionSlice = createSlice({
 
     removeCollection: (state, action) => {
       state.items = state.items.filter((item) => item.id !== action.payload);
-      localStorage.renmoveItem("collection", JSON.stringify(state.items));
+      localStorage.removeItem("collection", JSON.stringify(state.items));
     },
     clearCollection: (state) => {
       state.items = [];
