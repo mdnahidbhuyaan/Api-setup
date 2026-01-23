@@ -17,6 +17,7 @@ const App = () => {
         <Route  path='/' element={<HomePage/>}/>
         <Route  path='/pagecollection' element={<PageCollection/>}/>
         <Route  path='/about' element={<About/>}/>
+        <h1></h1>
        </Routes>
                <ToastContainer />
 
